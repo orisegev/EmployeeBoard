@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>עיריית רמת הוד</title>
+</head>
+<body>
+    <header>
+        <div class="buttons">
+            <a href="index.html">הודעות אחרונות</a>
+        </div>
+        <div class="title">רמת הוד</div>
+    </header>
+
+    <section id="messages-section">
+        <h2>הודעות</h2>
+		<div class="new-msg" id="toggle-form">
+			הוסף הודעה חדשה
+			<span id="plus-minus-symbol">+</span>
+		</div>
+        <div id="new-message-form-container" style="display: none;">
+            <h3>הוסף הודעה חדשה</h3>
+            <form id="new-message-form">
+                <label for="name">שם המפרסם:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">דוא"ל המפרסם:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">תוכן ההודעה:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">שלח</button>
+            </form>
+            <div id="form-response"></div>
+        </div>
+    </div>
+        <ul id="messages-list">
+        </ul>
+    </section>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
