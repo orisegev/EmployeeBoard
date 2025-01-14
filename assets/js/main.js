@@ -93,7 +93,7 @@ function loadMessages() {
 					<strong>דוא"ל המפרסם:</strong> ${message.email}<br>
 					${message.message}
 				`;
-				if (message.user_token === userToken) {
+				if (message.user_token != null && message.user_token === userToken) {
 					const deleteIcon = document.createElement('div');
 					deleteIcon.innerHTML = '<img title="מחק הודעה" alt="delete" src="./assets/images/delete-icon.png" width="20px" height="20px"></img>';
 					deleteIcon.style.cursor = 'pointer';
